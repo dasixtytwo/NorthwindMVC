@@ -1,0 +1,45 @@
+﻿@model dasixtytwo.lib.Employee
+@{
+  ViewData["Title"] = "Employee Details - " + Model.FirstName + Model.LastName;
+}
+<h2>Employee Details</h2>
+<hr />
+<div>
+  <dl class="dl-horizontal">
+    <dt>Employee ID</dt>
+    <dd>@Model.EmployeeID</dd>
+    <dt>Employee Name</dt>
+    <dd>@Model.FirstName @Model.LastName </dd>
+    <dt>Title</dt>
+    <dd>@Model.Title</dd>
+    <dt>Title Of Courtesy</dt>
+    <dd>@Model.TitleOfCourtesy</dd>
+    <dt>Birth Date</dt>
+    <dd>@Model.BirthDate</dd>
+    <dt>Hire Date</dt>
+    <dd>@Model.HireDate</dd>
+    <dt>Address</dt>
+    <dd>@Model.Address</dd>
+    <dt>City</dt>
+    <dd>@Model.City</dd>
+    <dt>Region</dt>
+    <dd>@Model.Region</dd>
+    <dt>Postal Code</dt>
+    <dd>@Model.PostalCode</dd>
+    <dt>Country</dt>
+    <dd>@Model.Country</dd>
+    <dt>Home Phone</dt>
+    <dd>@Model.HomePhone</dd>
+    <dt>Extension</dt>
+    <dd>@Model.Extension</dd>
+    <dt>Notes</dt>
+    <dd>@Model.Notes</dd>
+    <dt>Report To</dt>
+    <dd>@Model.ReportsToNavigation.FirstName</dd>
+
+  </dl>
+</div>
+<div>
+  <a asp-action="Edit" asp-route-id="@Model.EmployeeID">Edit</a> |
+  <a asp-action="Index">Back to List</a>
+</div>

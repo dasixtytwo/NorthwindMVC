@@ -1,0 +1,60 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#newspaper {
+    column-count: 1;
+    line-height: 2.8;
+    padding-top: 15px;
+}
+
+    #newspaper ul {
+        list-style-type: none;
+    }
+
+    #newspaper hr {
+        width: 100%;
+    }
+
+#first {
+    float: left;
+    width: 50%;
+}
+
+#second {
+    clear: right;
+    text-align: right;
+    margin-right: 30px;
+}
+
+#clear {
+    clear: both;
+}
+
+dt, dd {
+    line-height: 2;
+}
+
+.nav navbar-nav li {
+    display: none;
+}
+
+ul.nav navbar-nav li {
+    display: none;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
